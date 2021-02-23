@@ -26,5 +26,9 @@
         document.cookie = `frame=${r};`;
 
         // alert(`cookie: ${document.cookie} --- localStorage: ${iframe}`)
+        
+        iframe = localStorage.getItem("iframe");
+
+        alert("final: " + iframe);
     }
 </script>
