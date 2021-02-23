@@ -13,15 +13,18 @@
 
 <script>
     function setCookie(){
+        let iframe = localStorage.getItem("iframe");
+
+        alert(iframe);
+
         let r = Math.floor(Math.random () * 100);
 
         localStorage.setItem("iframe", r);
 
-        let iframe = localStorage.getItem("iframe");
 
-        document.cookie = `frame=${r}; SameSite=None; Secure`;
-        // document.cookie = `frame=${r};`;
+        // document.cookie = `frame=${r}; SameSite=None; Secure`;
+        document.cookie = `frame=${r};`;
 
-        alert(`cookie: ${document.cookie} --- localStorage: ${iframe}`)
+        // alert(`cookie: ${document.cookie} --- localStorage: ${iframe}`)
     }
 </script>
